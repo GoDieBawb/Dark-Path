@@ -1,0 +1,19 @@
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes.dex : \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\BuildConfig.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\MainActivity.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\R$attr.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\R$drawable.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\R$integer.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\R$layout.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\R$string.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\classes\com\bigbawb\questforge\R.class \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\MyGame-adc4a214ef647cd90e24c4e54b8cdf3d.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\jME3-jogg-a697f5802e9ecceec30727507c1b5eb9.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\jME3-android-66d1c7e3ceca2a7aa4d734b44f34c98f.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\j-ogg-vorbisd-0412a1f50624fb1de5ec0168fb9512cc.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\j-ogg-oggd-b1025bf449f77825fd3d265b9474f3eb.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\jME3-bullet-79e9b1e042ed47b98f3743ee7ddc6348.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\jME3-terrain-d0b85f09015081ab2416eb063c560d5f.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\jME3-core-0982a76570cea670b1c0a8bb88bf4b46.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\google-play-services-64963ad802b5ca40241c88e800493836.jar \
+C:\Users\Bob\Documents\QuestForge\mobile\bin\dexedLibs\tonegod.gui-4ef3be55c4ca8a1b2031834a3f3f3d2c.jar \
