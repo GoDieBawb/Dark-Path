@@ -168,14 +168,29 @@ public class QuestAssigner {
     //Mission Four Stuff
     else if (name.equals("Thief")) {
       quest = new ThiefQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Prisoner.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("Sheriff")) {
       quest = new SheriffQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Sheriff.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("ThiefInn")) {
-      quest = new ThiefInnQuest(stateManager, holder);  
+      quest = new ThiefInnQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/BlackSmith.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("ThiefCrate")) {
@@ -186,23 +201,48 @@ public class QuestAssigner {
     else if (name.equals("ThiefBody")) {
       quest = new ThiefBodyQuest(stateManager, holder);
       ((Interactable) holder).contactMessage = "A dead body lies here on the floor.";
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Body.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Interactable) holder).model.setMaterial(mat);
       }
     
     //Mission 5 Stuff
     else if (name.equals("PoisonMaster")) {
       quest = new PoisonQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Devil.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("PoisonPrisoner")) {
-      quest = new PoisonPrisonerQuest(stateManager, holder);  
+      quest = new PoisonPrisonerQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Prisoner.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
     
     else if (name.equals("PoisonCook")) {
-      quest = new PoisonCookQuest(stateManager, holder);  
-      }
+      quest = new PoisonCookQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/ShopKeeper.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
+    }
     
     else if (name.equals("PoisonButler")) {
-      quest = new PoisonButlerQuest(stateManager, holder);  
+      quest = new PoisonButlerQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Butler.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("PoisonTable")) {
@@ -218,10 +258,20 @@ public class QuestAssigner {
     //Mission Six Stuff
     else if (name.equals("StinkPeter")) {
       quest = new StinkPeterQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Peter.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
     
     else if (name.equals("StinkPaul")) {
       quest = new StinkPaulQuest(stateManager, holder);  
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Paul.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("StinkWell")) {

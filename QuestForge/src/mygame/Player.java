@@ -4,17 +4,10 @@ import com.jme3.animation.AnimChannel;
 import com.jme3.animation.AnimControl;
 import com.jme3.animation.LoopMode;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.asset.AssetManager;
-import com.jme3.asset.AssetNotFoundException;
-import com.jme3.asset.plugins.FileLocator;
 import com.jme3.bullet.control.BetterCharacterControl;
-import com.jme3.export.binary.BinaryExporter;
 import com.jme3.scene.Node;
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.HashMap;
 
 public class Player extends Node {
  
@@ -31,6 +24,7 @@ public class Player extends Node {
   public float                  speedMult;
   public QuestList              questList;
   public ArrayList<String>      inventory;
+  private YamlManager           yamlManager;
   
   public Player(AppStateManager stateManager) {
      
@@ -41,8 +35,10 @@ public class Player extends Node {
     legChannel  = animControl.createChannel();
     questList   = new QuestList(this);
     inventory   = new ArrayList();
-    if ("Dalvik".equals(System.getProperty("java.vm.name")))
+    yamlManager = new YamlManager();
+    
     bestLevel   = readScore(stateManager);
+    
     model.scale(.3f);
     attachChild(model);
     addControl(phys);
@@ -56,89 +52,80 @@ public class Player extends Node {
   public void saveScore(int newScore, AppStateManager stateManager) {
     
     String filePath;
-      
+    
+    HashMap map = new HashMap();
+    
     try {  
-      filePath         = stateManager.getState(AndroidManager.class).filePath;
-      }
+        filePath         = stateManager.getState(AndroidManager.class).filePath;
+    }
     
     catch(NullPointerException e) {
-      filePath = System.getProperty("user.home")+ "/";
-      }
-    
-    BinaryExporter exporter = BinaryExporter.getInstance();
-    Node score              = new Node();
-    score.setUserData("Score", newScore);
-    File file               = new File(filePath + "/player.j3o");
-    
-    System.out.println("Saving Score");
-    
-    try {
-        
-      exporter.save(score, file);  
-      System.out.println("Score saved to: " + filePath);
-        
-      }
-    
-    catch (IOException e) {
-        
-      Logger.getLogger(Main.class.getName()).log(Level.SEVERE, "Error: Failed to save game!", e);  
-        System.out.println("Failure");
-      }
-    
-      System.out.println("score completion");
-    
+        filePath = System.getProperty("user.home")+ "\\";
     }
+    
+     map.put("Score", newScore);
+     yamlManager.saveYaml(filePath + "Save.yml", map);
+    
+     System.out.println("score completion");
+    
+  }
   
   public int readScore(AppStateManager stateManager) {
-     String       filePath     = stateManager.getState(AndroidManager.class).filePath;
-     AssetManager assetManager = stateManager.getApplication().getAssetManager();
      
-     assetManager.registerLocator(filePath, FileLocator.class);
+     System.out.println("Reading Score"); 
+      
+     String filePath;
+      
+     try {  
+        filePath = stateManager.getState(AndroidManager.class).filePath;
+     }
+    
+     catch(NullPointerException e) {
+        filePath = System.getProperty("user.home")+ "\\";
+     }
      
-     Node newNode;
+     System.out.println("File Path Is: " + filePath);
+          
      int  score;
      
      try {
-       newNode = (Node) assetManager.loadModel("player.j3o");
-       score = newNode.getUserData("Score");
-       }
+       score = (Integer) yamlManager.loadYaml(filePath + "Save.yml").get("Score");
+     }
      
-     catch (AssetNotFoundException ex) {
+     catch (NullPointerException e) {
        saveScore(0, stateManager);
        score = 0;    
-       }
-     
-     catch (IllegalArgumentException e) {
-       saveScore(0, stateManager);
-       score = 0;
-       }
+     }
      
      
      System.out.println("You've loaded: " + score);
      return score;
+     
      }
   
   public void swing(AppStateManager stateManager) {
     
     if (!hasSwung) {
-    armChannel.setAnim("ArmSwing");
-    armChannel.setSpeed(2);
-    armChannel.setLoopMode(LoopMode.DontLoop);
-    lastSwing = System.currentTimeMillis()/1000;
-    hasSwung  = true;
-    intCheck  = true;
+        
+        armChannel.setAnim("ArmSwing");
+        armChannel.setSpeed(2);
+        armChannel.setLoopMode(LoopMode.DontLoop);
+        lastSwing = System.currentTimeMillis()/1000;
+        hasSwung  = true;
+        intCheck  = true;
+        
     }
     
   }
   
   public void run(){
     if (!armChannel.getAnimationName().equals("ArmRun") && !hasSwung){
-      armChannel.setAnim("ArmRun");
-      }
+        armChannel.setAnim("ArmRun");
+    }
     
     if (!legChannel.getAnimationName().equals("LegRun")){
-      legChannel.setAnim("LegRun");
-      }
+        legChannel.setAnim("LegRun");
+    }
     
     }
   
