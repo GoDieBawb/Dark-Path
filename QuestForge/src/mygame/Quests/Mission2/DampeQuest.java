@@ -5,7 +5,10 @@
 package mygame.Quests.Mission2;
 
 import com.jme3.app.state.AppStateManager;
+import com.jme3.asset.TextureKey;
+import com.jme3.material.Material;
 import com.jme3.scene.Node;
+import com.jme3.texture.Texture;
 import mygame.Quest;
 
 /**

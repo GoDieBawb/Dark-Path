@@ -62,7 +62,7 @@ public class Player extends Node {
       }
     
     catch(NullPointerException e) {
-      filePath         = stateManager.getState(AndroidManager.class).filePath;
+      filePath = System.getProperty("user.home")+ "/";
       }
     
     BinaryExporter exporter = BinaryExporter.getInstance();

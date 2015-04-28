@@ -4,7 +4,6 @@
  */
 package mygame.Quests.Mission3;
 
-import mygame.Quests.Mission3.DevilQuest;
 import com.jme3.app.state.AppStateManager;
 import com.jme3.scene.Node;
 import mygame.Quest;

@@ -16,8 +16,8 @@ import mygame.Quest;
 public class ThiefBodyQuest extends Quest {
     
   public ThiefBodyQuest(AppStateManager stateManager, Node holder) {
-    super(stateManager, holder);  
-    }
+      super(stateManager, holder);
+  }
   
   @Override
   public void act(){

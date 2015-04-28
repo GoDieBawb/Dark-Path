@@ -7,7 +7,10 @@ import mygame.Quests.Mission4.*;
 import mygame.Quests.Mission5.*;
 import mygame.Quests.Mission6.*;
 import com.jme3.app.state.AppStateManager;
+import com.jme3.asset.TextureKey;
+import com.jme3.material.Material;
 import com.jme3.scene.Node;
+import com.jme3.texture.Texture;
 import mygame.Interactable;
 import mygame.Npc;
 import mygame.Quest;
@@ -38,19 +41,32 @@ public class QuestAssigner {
       }
     
     //Init the BillyQuest Stuff
-
     if (name.equals("Billy")) {
       quest = new BillyQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Billy.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("Clark")) {
-      quest = new ClarkQuest(stateManager, holder);  
-      }
+      quest = new ClarkQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Clark.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);    
+      ((Npc) holder).model.setMaterial(mat);      
+    }
 
     else if (name.equals("Betsy")) {
-      quest = new BetsyQuest(stateManager, holder);  
+      quest = new BetsyQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Betsy.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
-
     else if (name.equals("BillyTree")) {
       quest = new BillyTreeQuest(stateManager, holder);
       ((Interactable) holder).contactMessage = "Looks like a normal tree.";
@@ -64,11 +80,21 @@ public class QuestAssigner {
     //Quest Two Will Start Here
     else if (name.equals("Flora")) {
       quest = new FloraQuest(stateManager, holder); 
-      }
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Flora.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex); 
+      ((Npc) holder).model.setMaterial(mat);
+    }
     
     else if (name.equals("Dampe")) {
       quest = new DampeQuest(stateManager, holder);
-      }
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Dampe.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
+    }
     
     else if (name.equals("RandomGrave")) {
       quest = new GraveQuest(stateManager, holder);
@@ -94,14 +120,29 @@ public class QuestAssigner {
     
     else if (name.equals("Father")) {
       quest = new FatherQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Priest.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
     
     else if (name.equals("Brother")) {
-      quest = new BrotherQuest(stateManager, holder);  
+      quest = new BrotherQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Priest.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);  
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
 
     else if (name.equals("Devil")) {
-      quest = new DevilQuest(stateManager, holder);  
+      quest = new DevilQuest(stateManager, holder);
+      Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
+      TextureKey key = new TextureKey("Models/Person/Devil.png", true);
+      Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
+      mat.setTexture("ColorMap", tex);
+      ((Npc) holder).model.setMaterial(mat);
       }
     
     else if (name.equals("DevilWall")) {

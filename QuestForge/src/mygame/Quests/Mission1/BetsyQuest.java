@@ -15,9 +15,10 @@ import mygame.Quest;
 public class BetsyQuest extends Quest {
     
   public BetsyQuest(AppStateManager stateManager, Node holder) {
-    super(stateManager, holder);  
+      
+    super(stateManager, holder);
     name = "BillyQuest";
-    }
+  }
     
   @Override
   public void act() {
