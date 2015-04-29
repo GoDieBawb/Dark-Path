@@ -9,6 +9,7 @@ import mygame.Quests.Mission6.*;
 import com.jme3.app.state.AppStateManager;
 import com.jme3.asset.TextureKey;
 import com.jme3.material.Material;
+import com.jme3.material.RenderState;
 import com.jme3.scene.Node;
 import com.jme3.texture.Texture;
 import mygame.Interactable;
@@ -47,6 +48,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Billy.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -55,7 +58,9 @@ public class QuestAssigner {
       Material mat   = new Material(stateManager.getApplication().getAssetManager(), "Common/MatDefs/Misc/Unshaded.j3md");
       TextureKey key = new TextureKey("Models/Person/Clark.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
-      mat.setTexture("ColorMap", tex);    
+      mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);      
     }
 
@@ -65,6 +70,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Betsy.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
     else if (name.equals("BillyTree")) {
@@ -84,6 +91,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Flora.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex); 
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
     }
     
@@ -93,6 +102,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Dampe.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
     }
     
@@ -124,6 +135,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Priest.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
     
@@ -133,6 +146,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Priest.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);  
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -142,6 +157,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Devil.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
     
@@ -172,6 +189,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Prisoner.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -181,6 +200,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Sheriff.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -190,6 +211,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/BlackSmith.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -205,6 +228,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Body.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Interactable) holder).model.setMaterial(mat);
       }
     
@@ -215,6 +240,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Devil.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -224,6 +251,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Prisoner.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
     
@@ -233,6 +262,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/ShopKeeper.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
     }
     
@@ -242,6 +273,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Butler.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
@@ -262,6 +295,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Peter.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
     
@@ -271,6 +306,8 @@ public class QuestAssigner {
       TextureKey key = new TextureKey("Models/Person/Paul.png", true);
       Texture tex    = stateManager.getApplication().getAssetManager().loadTexture(key);    
       mat.setTexture("ColorMap", tex);
+      mat.getAdditionalRenderState().setBlendMode(RenderState.BlendMode.Alpha);
+      mat.setFloat("AlphaDiscardThreshold", .5f);
       ((Npc) holder).model.setMaterial(mat);
       }
 
