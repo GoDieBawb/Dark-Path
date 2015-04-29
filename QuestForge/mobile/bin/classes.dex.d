@@ -12,6 +12,7 @@ C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\jME3-jog
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\jME3-android-565d37a63b790da191fab11c4be2c1a2.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\j-ogg-vorbisd-cea3df4eb81b58c9b2279be221f6140c.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\j-ogg-oggd-cf996c1b006fc6f5726cb09d2aec7c77.jar \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\snakeyaml-1.10-android-e93a0a205198e08ee2781d85d225a1f9.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\jME3-bullet-cfcab1b8763681d283ef016eea3e8d68.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\jME3-terrain-4cd1f6fe6621848bead668250ea58e06.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\bin\dexedLibs\jME3-core-7273bb7cd4ce24e8dcc9a79c3e354b26.jar \

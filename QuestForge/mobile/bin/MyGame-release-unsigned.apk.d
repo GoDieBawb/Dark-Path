@@ -6,6 +6,7 @@ C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\jME3-jogg.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\jME3-android.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\j-ogg-vorbisd.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\j-ogg-oggd.jar \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\snakeyaml-1.10-android.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\jME3-bullet.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\jME3-terrain.jar \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\libs\jME3-core.jar \

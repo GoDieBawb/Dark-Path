@@ -193,7 +193,6 @@ C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\Impac
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\Impact.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\SwishButtons.fnt \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\SwishButtons.png \
-C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\TestModel.j3m \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\Fonts\UnrealGold.fnt \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\Fonts\UnrealGold.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Interface\Fonts\UnrealTournament.fnt \
@@ -202,6 +201,7 @@ C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\Gener
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\Paper.j3m \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\Rope.j3m \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\Stone.j3m \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\TestModel.j3m \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\WellBrick.j3m \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\WellMetal.j3m \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Materials\WellWood.j3m \
@@ -238,12 +238,19 @@ C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\B
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Billy.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\BlackSmith.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Body.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Butler.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Clark.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Dampe.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Devil.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Flora.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Paul.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Person.j3o \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Person.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Peter.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Priest.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Prisoner.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\Sheriff.png \
+C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Person\ShopKeeper.png \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Structures\cg_baileyA.j3o \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Structures\cg_door_pointy.j3o \
 C:\Users\Bob\Documents\GitHub\Dark-Path\QuestForge\mobile\assets\Models\Structures\cg_gateway.j3o \
