@@ -47,12 +47,12 @@ public class ClarkQuest extends Quest {
       }
     
     else if (billyQuest.step.equals("HasWood")) {
-      speech = "There we go.... Now you can leave here alive....";
+      speech = "That is some great wood.... Now where has Billy gone...";
       billyQuest.step = "GetBilly";
       }
     
     else if (billyQuest.step.equals("GetBilly")) {
-      speech = "Now where has Billy gone.... Go out and find me Little Billy, I need him for dinner.";    
+      speech = "Go out and find me Little Billy, I need him for dinner.";    
       }
     
     else if (billyQuest.step.equals("HasBilly")) {

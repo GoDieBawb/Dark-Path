@@ -60,7 +60,7 @@ public class DampeQuest extends Quest {
       }
 
     else if (floraQuest.step.equals("Done")) {
-      speech = "Dame disappears before your eyes...";
+      speech = "Dampe disappears before your eyes...";
       holder.removeFromParent();
       }
     
