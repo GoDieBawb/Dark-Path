@@ -1,0 +1,24 @@
+/home/bob/Documents/Dark Path/mobile/bin/classes.dex : \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/R$integer.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/MainActivity.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/R$string.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/BuildConfig.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/R$layout.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/R.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/R$attr.class \
+/home/bob/Documents/Dark Path/mobile/bin/classes/com/bigbawb/questforge/R$drawable.class \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-effects-3.1.0-beta1-18a35733aa3035264390783322748f03.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/google-play-services-5c37158665e544537877a28baf5d2d2e.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-android-native-3.1.0-beta1-2739cf9ab42d72df31ad0b325db8ef33.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/j-ogg-all-1.0.0-e1549f5f560df5b2b15307fd558d1a14.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-networking-3.1.0-beta1-1f7afbe3b47775817b5b7f82416cab00.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-bullet-native-android-3.1.0-beta1-68708f91c8c00989e8b63e3cfb006d26.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-bullet-3.1.0-beta1-14a201ef4a6753cc35e0abe05ac26d8f.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/tonegod-9e7cbfc54068e9e346e600a00467de8a.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-terrain-3.1.0-beta1-4ec602f9eb3b76760c6081fabc1f5789.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/MyGame-3b5977ed338141956dab989db6d97cf4.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-plugins-3.1.0-beta1-7dfd6bf8f862d6f03fc709c0ff1513ea.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-jogg-3.1.0-beta1-bf7c1528913a94c292158810bdd73f7f.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-core-3.1.0-beta1-8c1247d704a9968ef33dd01eaaade711.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/jme3-android-3.1.0-beta1-e75f3d1c4f4d43251838821ee4e1c5cd.jar \
+/home/bob/Documents/Dark Path/mobile/bin/dexedLibs/snakeyaml-1.10-android-270841ce12a0c8ff7a97469e8348fa6e.jar \
