@@ -1,7 +1,7 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+* To change this template, choose Tools | Templates
+* and open the template in the editor.
+*/
 package mygame.Quests.Mission3;
 
 import com.jme3.app.state.AppStateManager;
@@ -10,66 +10,61 @@ import mygame.Quest;
 import mygame.SceneManager;
 
 /**
- *
- * @author Bob
- */
+*
+* @author Bob
+*/
 public class DevilWallQuest extends Quest {
-  
-  public DevilWallQuest(AppStateManager stateManager, Node holder) {
-    super(stateManager, holder);
+    
+    public DevilWallQuest(AppStateManager stateManager, Node holder) {
+        super(stateManager, holder);
     }
     
-  @Override
-  public void act() {
-    
-    String speech;
-    Quest devilQuest = player.questList.getQuest("DevilQuest");
-    
-    if (devilQuest == null) {
-      
-      devilQuest      = new DevilQuest(stateManager, player);
-      devilQuest.step = "Start";
-      player.questList.add(devilQuest);
+    @Override
+    public void act() {
         
-      }
-    
-    if (devilQuest.step.equals("Start")) {
-      speech = "This seems to be a very strange wall";
-      }
-    
-    else if (devilQuest.step.equals("FindWall")) {
-      speech = "The wall falls away as you press one of the bricks";
-      holder.removeFromParent();
-      stateManager.getState(SceneManager.class).addPhys();
-      devilQuest.step = "FindDoor";
-      }
-    
-    else if (devilQuest.step.equals("FindDoor")) {
-      speech = "";  
-      }
-
-    else if (devilQuest.step.equals("FatherTalk")) {
-      speech = "";  
-      }
-
-    else if (devilQuest.step.equals("FindAxe")) {
-      speech = "";  
-      }
-
-    else if (devilQuest.step.equals("ChopDoor")) {
-      speech = "";  
-      }
-
-    else if (devilQuest.step.equals("Done")) {
-      speech = "";  
-      }
-    
-    else {
-      speech = "";
-      }
-    
-    gui.showAlert(holder.getName(), speech);      
-      
+        String speech;
+        Quest devilQuest = player.questList.getQuest("DevilQuest");
+        
+        if (devilQuest == null) {
+            
+            devilQuest      = new DevilQuest(stateManager, player);
+            devilQuest.step = "Start";
+            player.questList.add(devilQuest);
+            
+        }
+        
+        switch (devilQuest.step) {
+            case "Start":
+                speech = "This seems to be a very strange wall";
+                break;
+            case "FindWall":
+                speech = "The wall falls away as you press one of the bricks";
+                holder.removeFromParent();
+                stateManager.getState(SceneManager.class).addPhys();
+                devilQuest.step = "FindDoor";
+                break;
+            case "FindDoor":
+                speech = "";
+                break;
+            case "FatherTalk":
+                speech = "";
+                break;
+            case "FindAxe":
+                speech = "";
+                break;
+            case "ChopDoor":
+                speech = "";
+                break;
+            case "Done":
+                speech = "";
+                break;
+            default:
+                speech = "";
+                break;
+        }
+        
+        gui.showAlert(holder.getName(), speech);
+        
     }
-  
-  }
+    
+}

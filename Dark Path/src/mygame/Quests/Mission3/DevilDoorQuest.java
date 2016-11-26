@@ -1,7 +1,7 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+* To change this template, choose Tools | Templates
+* and open the template in the editor.
+*/
 package mygame.Quests.Mission3;
 
 import com.jme3.app.state.AppStateManager;
@@ -10,66 +10,61 @@ import mygame.Quest;
 import mygame.SceneManager;
 
 /**
- *
- * @author Bob
- */
+*
+* @author Bob
+*/
 public class DevilDoorQuest extends Quest {
-  
-  public DevilDoorQuest(AppStateManager stateManager, Node holder) {
-    super(stateManager, holder);
+    
+    public DevilDoorQuest(AppStateManager stateManager, Node holder) {
+        super(stateManager, holder);
     }
     
-  @Override
-  public void act() {
-    
-    String speech;
-    Quest devilQuest = player.questList.getQuest("DevilQuest");
-    
-    if (devilQuest == null) {
-      
-      devilQuest      = new DevilQuest(stateManager, player);
-      devilQuest.step = "Start";
-      player.questList.add(devilQuest);
+    @Override
+    public void act() {
         
-      }
-    
-    if (devilQuest.step.equals("Start")) {
-      speech = "A dark force resides inside";
-      }
-    
-    else if (devilQuest.step.equals("FindWall")) {
-      speech = "A dark force eminates from within...";  
-      }
-    
-    else if (devilQuest.step.equals("FindDoor")) {
-      speech = "You hear a voice coming from the inside...";  
-      }
-
-    else if (devilQuest.step.equals("FatherTalk")) {
-      speech = "The door is securely locked";  
-      }
-
-    else if (devilQuest.step.equals("FindAxe")) {
-      speech = "The door is blocked by planks... If only you had something to remove this.";  
-      }
-
-    else if (devilQuest.step.equals("ChopDoor")) {
-      speech = "You chop the planks away from the door and it immediately flies open...";
-      holder.removeFromParent();
-      stateManager.getState(SceneManager.class).addPhys();
-      devilQuest.step = "Done";
-      }
-
-    else if (devilQuest.step.equals("Done")) {
-      speech = "";  
-      }
-    
-    else {
-      speech = "";
-      }
-    
-    gui.showAlert(holder.getName(), speech);      
-      
+        String speech;
+        Quest devilQuest = player.questList.getQuest("DevilQuest");
+        
+        if (devilQuest == null) {
+            
+            devilQuest      = new DevilQuest(stateManager, player);
+            devilQuest.step = "Start";
+            player.questList.add(devilQuest);
+            
+        }
+        
+        switch (devilQuest.step) {
+            case "Start":
+                speech = "A dark force resides inside";
+                break;
+            case "FindWall":
+                speech = "A dark force eminates from within...";
+                break;
+            case "FindDoor":
+                speech = "You hear a voice coming from the inside...";
+                break;
+            case "FatherTalk":
+                speech = "The door is securely locked";
+                break;
+            case "FindAxe":
+                speech = "The door is blocked by planks... If only you had something to remove this.";
+                break;
+            case "ChopDoor":
+                speech = "You chop the planks away from the door and it immediately flies open...";
+                holder.removeFromParent();
+                stateManager.getState(SceneManager.class).addPhys();
+                devilQuest.step = "Done";
+                break;
+            case "Done":
+                speech = "";
+                break;
+            default:
+                speech = "";
+                break;
+        }
+        
+        gui.showAlert(holder.getName(), speech);
+        
     }
-  
-  }
+    
+}

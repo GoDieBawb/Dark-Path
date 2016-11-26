@@ -1,7 +1,7 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+* To change this template, choose Tools | Templates
+* and open the template in the editor.
+*/
 package mygame;
 
 import java.io.File;
@@ -14,9 +14,9 @@ import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
 /**
- *
- * @author Bob
- */
+*
+* @author Bob
+*/
 public class YamlManager {
     
     public HashMap loadYaml(String path) {
@@ -37,7 +37,7 @@ public class YamlManager {
         }
         
         return map;
-       
+        
     }
     
     public void saveYaml(String path, HashMap map) {
@@ -46,10 +46,10 @@ public class YamlManager {
         File file             = new File(path);
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
         options.setAllowUnicode(true);
-        Yaml yaml = new Yaml(options);         
+        Yaml yaml = new Yaml(options);
         
         try {
-        
+            
             FileWriter fw = new FileWriter(file);
             yaml.dump(map, fw);
             fw.close();

@@ -33,44 +33,38 @@ public class BetsyQuest extends Quest {
     
     String speech;
     
-    if (billyQuest.step.equals("Start")) {
-      speech = "Hello there... My name is Betsy. Welcome to my house";  
-      }
-    
-    else if (billyQuest.step.equals("GetWood")) {
-      speech = "Be careful of Clark.... He's a strange person. But when he asks you to do something... Do it.";    
-      }
-    
-    else if (billyQuest.step.equals("HasWood")) {
-      speech = "I would take that wood to Mr Clark quickly.... It's for your safety";
-      }
-    
-    else if (billyQuest.step.equals("GetBilly")) {
-      speech = "Whatever Clark asks.... Do it, for your own safety";    
-      }
-    
-    else if (billyQuest.step.equals("HasBilly")) {
-      speech = "Why isn't Billy playing outside? He should be out in the woods";    
-      }
-    
-    else if (billyQuest.step.equals("GaveBilly")) {
-      speech = "Clark.... Wanted Billy for dinner? Go stop him! Go get my Billy back";
-      holder.getParent().getChild("Little Billy").removeFromParent();
-      billyQuest.step = "KillClark";
-      }
-
-    else if (billyQuest.step.equals("KillClark")) {
-      speech = "Go and stop Clark from killing my Little Billy!";    
-      }
-    
-    else if (billyQuest.step.equals("Done")) {
-      speech = "Betsy overcome with her son's death has committed suicide... The guilt of the deed you've committed is so overwhelming, you do the same.";
-      super.finish();
-      }
-    
-    else {
-      speech = "Betsy has committed suicide. The guilt overwhelms you... and you d the same";  
-      super.finish();
+      switch (billyQuest.step) {
+          case "Start":
+              speech = "Hello there... My name is Betsy. Welcome to my house";
+              break;
+          case "GetWood":
+              speech = "Be careful of Clark.... He's a strange person. But when he asks you to do something... Do it.";
+              break;
+          case "HasWood":
+              speech = "I would take that wood to Mr Clark quickly.... It's for your safety";
+              break;
+          case "GetBilly":
+              speech = "Whatever Clark asks.... Do it, for your own safety";
+              break;
+          case "HasBilly":
+              speech = "Why isn't Billy playing outside? He should be out in the woods";
+              break;
+          case "GaveBilly":
+              speech = "Clark.... Wanted Billy for dinner? Go stop him! Go get my Billy back";
+              holder.getParent().getChild("Little Billy").removeFromParent();
+              billyQuest.step = "KillClark";
+              break;
+          case "KillClark":
+              speech = "Go and stop Clark from killing my Little Billy!";
+              break;
+          case "Done":
+              speech = "Betsy overcome with her son's death has committed suicide... The guilt of the deed you've committed is so overwhelming, you do the same.";
+              super.finish();
+              break;
+          default:
+              speech = "Betsy has committed suicide. The guilt overwhelms you... and you d the same";
+              super.finish();
+              break;
       }
     
     gui.showAlert(holder.getName(), speech);
